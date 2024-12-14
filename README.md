@@ -1,27 +1,5 @@
 # Portfolio
-
-## Table of Contents
-- [Portfolio](#portfolio)
-- [My Learning Journey](#my-learning-journey-data-analytics-projects)
-  - [Week-by-Week Learning](#week-by-week-learning-in-class)
-- [Descriptive Analysis](#descriptive-analysis)
-  - [Project Description](#project-description)
-  - [Methodology](#methodology)
-    - [Data Collection and Preparation](#1-data-collection-and-preparation)
-    - [Data Pipeline Design](#data-pipeline-design)
-  - [Insights and Findings](#insights-and-findings)
-  - [Recommendations](#recommendations)
-  - [Tools and Technologies](#tools-and-technologies)
-  - [Deliverables](#deliverables)
-- [Data Quality Control](#part-2-data-quality-control)
-  - [Project Description](#project-description-1)
-  - [Methodology](#methodology-1)
-  - [Deliverables](#deliverables-1)
-- [Conclusion](#conclusion)
-
----
-
-## My Learning Journey: Data Analytics Projects
+# My Learning Journey: Data Analytics Projects
 
 Throughout my 10-week class, I had the opportunity to delve into data analytics, focusing on AWS tools and machine learning services. Below is an overview of my learning, which includes two major projects I worked on, highlighting my experience and insights into AWS cloud solutions and machine learning applications.
 
@@ -39,27 +17,24 @@ Over the past 10 weeks, I gained hands-on experience with AWS technologies, incl
 - Machine learning model development with AWS SageMaker
 - Monitoring with AWS CloudWatch
 
-By the end of this course, I was able to build end-to-end data analytics pipelines, leveraging AWS services to clean, analyze, and model data, along with monitoring systems for data quality and performance.
-
----
-
+By the end of this course, I was able to build end-to-end data analytics pipelines, leveraging AWS services to clean, analyze, and model data, along with monitoring systems for data quality and performance
 # **Descriptive Analysis**
 
 ## **Project Description**
-
 **Project Title**: Distribution of Street Usages in Vancouver  
 **Objective**: To design and implement a data analytics platform (DAP) that analyzes the distribution of street usage types in Vancouver, focusing on arterial vs. non-arterial streets and determining how many streets fall under each category.  
 
 **Dataset**:  
-[View the Dataset](https://opendata.vancouver.ca/explore/dataset/one-way-streets/table/)  
-The dataset focuses on one-way street usage in Vancouver. Key features include:  
+The dataset used for this project focuses on one-way street usage in Vancouver. Key features include:  
 1. **Street Type**: Categorizes streets as either *Arterial* or *Non-Arterial*.  
    - *Arterial*: Streets primarily designed to handle higher traffic volumes and facilitate intercity transport.  
    - *Non-Arterial*: Streets catering to lower traffic volumes, mainly for local access.  
-2. **Geo-location Coordinates**: Useful for GIS integration and mapping visualizations.  
-3. **Street Names**: For referencing and validation during analysis.  
+2. **Geo-location Coordinates**:  
+   - Latitude and longitude points for mapping and spatial analysis of streets.  
+   - Useful for GIS integration and mapping visualizations.  
+3. **Street Names**:  
+   - Contains official names of streets to allow for referencing and validation during analysis.  
 
----
 
 ## **Methodology**
 
@@ -69,6 +44,8 @@ The dataset focuses on one-way street usage in Vancouver. Key features include:
 
 ![image](https://github.com/user-attachments/assets/bbac43c9-74e6-4cd5-a383-de5ad9043e05)
 
+---
+
 #### **Data Profiling**
 - Conducted data profiling using AWS tools to ensure data quality and integrity.  
 - **Key Observations**:  
@@ -76,7 +53,9 @@ The dataset focuses on one-way street usage in Vancouver. Key features include:
   - Correct data types (e.g., string).  
 
 ![image](https://github.com/user-attachments/assets/c823e2ba-1425-489c-93b6-071dd7800a0e)
+
 ![image](https://github.com/user-attachments/assets/0767f009-f94f-43be-9417-9a374aa7dd30)
+
 
 #### **Data Cleaning**
 - Cleaned the dataset by:  
@@ -88,7 +67,9 @@ The dataset focuses on one-way street usage in Vancouver. Key features include:
   - CSV format for the user folder.  
 
 ![image](https://github.com/user-attachments/assets/6c9b3dc5-5cf8-4fab-b8f1-329eac00ec4e)
+
 ![image](https://github.com/user-attachments/assets/068edfe5-1539-460b-b6ff-e81d04010748)
+
 
 ### **Data Pipeline Design**
 - Designed and implemented an ETL pipeline in AWS Glue for further analysis and transformation of the cleaned dataset.  
@@ -98,17 +79,6 @@ The dataset focuses on one-way street usage in Vancouver. Key features include:
 
 ![image](https://github.com/user-attachments/assets/182c3164-75c0-4917-bc0f-135fa449f9b2)
 
-<details>
-  <summary>View Project Steps</summary>
-
-- **Step 1**: Data ingestion using AWS S3.
-- **Step 2**: Profiling and cleaning the data with AWS Glue DataBrew.
-- **Step 3**: ETL pipeline design in AWS Glue.
-- **Step 4**: Analysis of one-way streets by category.
-
-</details>
-
----
 
 ## **Insights and Findings**
 - The distribution of street usage reveals patterns in how arterial and non-arterial streets are utilized across Vancouver.  
@@ -131,21 +101,36 @@ The dataset focuses on one-way street usage in Vancouver. Key features include:
 ---
 
 ## **Deliverables**
-- [x] Comprehensive report summarizing the design, methodology, and findings.  
-- [x] Screenshots of key steps and outputs.  
-- [ ] Presentation materials highlighting project insights and recommendations.  
+1. A comprehensive report summarizing the design, methodology, and findings.  
+2. Screenshots of key steps and outputs.  
+3. Presentation materials highlighting project insights and recommendations.
 
----
-
-# **Part-2: Data Quality Control**
+   # **Part-2-Data Quality Control**
 
 ## **Project Description**  
 **Project Title**: Data Quality Control Initiative for One-Way Street Usage in Vancouver  
 
+**Objective**: To implement data quality control measures for analyzing one-way street usage in Vancouver. This initiative focuses on data enrichment, protection, governance, and observability to ensure reliable and high-quality data for urban planning and decision-making.  
+
 ---
 
-<details>
-  <summary>View Methodology</summary>
+## **Background**  
+Analyzing one-way street usage requires a robust framework to manage, refine, and secure data. This project utilizes AWS services to enhance data quality, focusing on key features:  
+- **Street Type**: Categorized as arterial or non-arterial.  
+- **Geo-location Coordinates**: For precise mapping and analysis.  
+- **Street Names**: For identification and classification.  
+
+---
+
+## **Scope**  
+- **Data Enrichment**: Integration of structured and unstructured datasets to provide unified views.  
+- **Data Protection**: Security measures to safeguard data integrity and confidentiality.  
+- **Data Governance**: Ensuring data accuracy, sensitivity checks, and structured segregation.  
+- **Data Observability**: Monitoring resource utilization using AWS Cloud Watch.  
+
+---
+
+## **Methodology**
 
 ### **Data Enrichment**  
 - Integrated data from **AWS Data Catalog** and **Dynamo DB** for a unified and comprehensive view.  
@@ -193,17 +178,24 @@ The dataset focuses on one-way street usage in Vancouver. Key features include:
 - Enabled visualization of data and resources to ensure optimal performance and scalability.  
 
 ![image](https://github.com/user-attachments/assets/a395edb7-4148-421f-95b2-3e82cead997b)
-</details>
 
 ---
+
+## **Deliverables**  
+1. A comprehensive framework for data quality control.  
+2. Cleaned and enriched datasets ready for analysis.  
+3. Screenshots of key implementation steps and outputs.  
+4. A Cloud Watch dashboard for ongoing resource monitoring.  
 
 ## Conclusion
 
-Through the **Distribution of Street Usages in Vancouver** and **Data Quality Control Initiative** projects, I gained hands-on expertise in designing and implementing data pipelines, ensuring data quality, and utilizing AWS services to deliver actionable insights.  
+My 10-week journey into data analytics and AWS tools has been an enriching experience, allowing me to build technical skills and apply them to real-world problems. Through the **Distribution of Street Usages in Vancouver** and **Data Quality Control Initiative** projects, I gained hands-on expertise in designing and implementing data pipelines, ensuring data quality, and utilizing AWS services to deliver actionable insights.
+
+These projects exemplified the power of AWS tools, such as S3, Glue, DataBrew, and CloudWatch, in managing data workflows, securing sensitive information, and optimizing resource usage. By leveraging machine learning capabilities through SageMaker and creating robust monitoring systems, I was able to extract meaningful insights and establish frameworks for continuous improvement.
 
 ### Key Takeaways:
-- **End-to-End Pipeline Development**: The ability to transform raw data into insightful analytics through AWS services.  
-- **Data Quality Control**: Ensuring reliable and accurate datasets for decision-making processes.  
-- **Scalable Solutions**: Designing workflows and monitoring systems capable of growing with future needs.  
+- **End-to-End Pipeline Development**: The ability to transform raw data into insightful analytics through AWS services.
+- **Data Quality Control**: Ensuring reliable and accurate datasets for decision-making processes.
+- **Scalable Solutions**: Designing workflows and monitoring systems capable of growing with future needs.
 
----
+These projects have strengthened my understanding of data analytics and cloud computing, preparing me to tackle complex challenges in urban planning, business intelligence, or any field requiring data-driven solutions. The knowledge and skills I acquired have laid a strong foundation for a career in data analytics and machine learning.

@@ -147,14 +147,52 @@ The dataset focuses on one-way street usage in Vancouver. Key features include:
 <details>
   <summary>View Methodology</summary>
 
+### **Data Enrichment**  
+- Integrated data from **AWS Data Catalog** and **Dynamo DB** for a unified and comprehensive view.  
+- Created a database in Dynamo DB to store and manage structured data like key-value pairs. Exported sample items to an **S3 transfer bucket**, enabling easy access and subsequent enrichment steps.  
+- Used AWS Glue crawlers to populate the **Data Catalog** and queried the data using **AWS Athena**, ensuring seamless analysis across formats.  
+
+**Screenshots**:  
+![image](https://github.com/user-attachments/assets/eacf07ce-e53a-40d8-98df-879882a9ab06)
+![image](https://github.com/user-attachments/assets/89d6fd83-59b5-4204-8fcc-63c064d04dd5)
+![image](https://github.com/user-attachments/assets/383a21eb-2450-4db2-9db2-153b12c5482b)
+![image](https://github.com/user-attachments/assets/ee395900-3144-44c2-b6e1-8c7b8a39caa9)
+![image](https://github.com/user-attachments/assets/83ba20dc-e09d-423d-9144-29fc71919ea0)
+
+---
+
 ### **Data Protection**  
 - Implemented encryption using **AWS Key Management Service (KMS)** to secure S3 buckets.  
-- Enabled **bucket encryption**, **versioning**, and **backup mechanisms**.  
+- Enabled **bucket encryption**, **versioning**, and **backup mechanisms** to ensure data safety and recovery.  
+- Set up **replication** for redundancy and disaster recovery.  
+
+**Screenshots**:  
+![image](https://github.com/user-attachments/assets/8d6a0343-f347-4155-a0c2-248478904232)
+![image](https://github.com/user-attachments/assets/64ef31b1-3fb2-44b2-ae6b-75f2b3d3d1c8)
+![image](https://github.com/user-attachments/assets/f3d58e28-0526-4a3c-92b2-aee49c4a8312)
+![image](https://github.com/user-attachments/assets/389e9639-cec0-4682-8fae-20afebce3927)
+![image](https://github.com/user-attachments/assets/c770b9bb-bf3d-4bbb-aa36-34aedf66e9bc)
+
+---
+
+### **Data Governance**  
+1. **Sensitive Data Detection**: Ensured no sensitive or personally identifiable information (PII) was present in the dataset.  
+2. **Data Quality Assurance**: Validated dataset completeness with no missing or null values.  
+3. **Data Segregation**: Used conditional routing to segregate data into arterial and non-arterial street types.  
+4. **Data Destination**: Stored cleaned and segregated data in destination buckets under a "data quality" folder for further analysis.  
+
+![image](https://github.com/user-attachments/assets/dfc1f559-0eb0-478f-b79c-3a530570783b)
+
+---
 
 ### **Data Observability**  
-- Built a **CloudWatch dashboard** to monitor AWS resources.  
-- Tracked S3 bucket size, resource utilization, and cost-performance.  
+- Built a **Cloud Watch dashboard** to monitor AWS resources and track metrics such as:  
+  - S3 bucket size and object count.  
+  - Resource utilization for services like EC2.  
+  - Cost-performance analysis for effective resource management.  
+- Enabled visualization of data and resources to ensure optimal performance and scalability.  
 
+![image](https://github.com/user-attachments/assets/a395edb7-4148-421f-95b2-3e82cead997b)
 </details>
 
 ---

@@ -1,4 +1,4 @@
-"# Portfolio
+# Portfolio
 # My Learning Journey: Data Analytics Projects
 
 Throughout my 10-week class, I had the opportunity to delve into data analytics, focusing on AWS tools and machine learning services. Below is an overview of my learning, which includes two major projects I worked on, highlighting my experience and insights into AWS cloud solutions and machine learning applications.
@@ -25,12 +25,16 @@ By the end of this course, I was able to build end-to-end data analytics pipelin
 **Objective**: To design and implement a data analytics platform (DAP) that analyzes the distribution of street usage types in Vancouver, focusing on arterial vs. non-arterial streets and determining how many streets fall under each category.  
 
 **Dataset**:  
-The dataset used for this project pertains to one-way street usage in Vancouver. Key features include:  
-- Street Type (Arterial/Non-Arterial)  
-- Geo-location Coordinates  
-- Street Names  
+The dataset used for this project focuses on one-way street usage in Vancouver. Key features include:  
+1. **Street Type**: Categorizes streets as either *Arterial* or *Non-Arterial*.  
+   - *Arterial*: Streets primarily designed to handle higher traffic volumes and facilitate intercity transport.  
+   - *Non-Arterial*: Streets catering to lower traffic volumes, mainly for local access.  
+2. **Geo-location Coordinates**:  
+   - Latitude and longitude points for mapping and spatial analysis of streets.  
+   - Useful for GIS integration and mapping visualizations.  
+3. **Street Names**:  
+   - Contains official names of streets to allow for referencing and validation during analysis.  
 
----
 
 ## **Methodology**
 

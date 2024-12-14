@@ -25,6 +25,8 @@ By the end of this course, I was able to build end-to-end data analytics pipelin
 **Objective**: To design and implement a data analytics platform (DAP) that analyzes the distribution of street usage types in Vancouver, focusing on arterial vs. non-arterial streets and determining how many streets fall under each category.  
 
 **Dataset**:  
+[View the Dataset](https://opendata.vancouver.ca/explore/dataset/one-way-streets/table/)
+
 The dataset used for this project focuses on one-way street usage in Vancouver. Key features include:  
 1. **Street Type**: Categorizes streets as either *Arterial* or *Non-Arterial*.  
    - *Arterial*: Streets primarily designed to handle higher traffic volumes and facilitate intercity transport.  
